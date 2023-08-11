@@ -24,12 +24,17 @@ header{
     padding-bottom: 50px;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+header > p{
+    padding-bottom: 50px;
 }
 
-a:hover{
+header a, footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
     text-decoration: underline;
     
 }
@@ -40,36 +45,45 @@ header > h1{
 }
 
 section{
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 10px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
     font-family: var(--font-2);
     line-height: 2em;
-    font-size: 3vw;
+    
 }
 
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
 
 section.imagem{
-   
+    color: white;
     background-attachment: fixed;
-    background-position: right center;
+    
     background-size: cover;
     box-shadow: inset 6px 6px 13px 0px black;
 }
 
 section#img1{
-     background-image: url('imagens/background001.jpg');
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
 }
 
 section#img2{
     background-image: url(imagens/background002.jpg);
 }
-section.imagem p{
- background-color: rgba(83, 83, 83, 0.226);
- color: white;
- display: inline-flex;
- padding: 10px;
- border-radius: 4px;
+
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
  
 
 }
